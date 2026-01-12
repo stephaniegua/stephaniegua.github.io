@@ -1,0 +1,129 @@
+.mini-slider {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.mini-slide {
+  position: relative;
+  flex: 1 0 30%;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+
+.mini-slide:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.slide-content {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.mini-slide:hover .slide-caption {
+  opacity: 1;
+}
+.mini-slide {
+  display: none;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.mini-slide.active {
+  display: block;
+}
+
+.mini-prev, .mini-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.icon-pulse {
+  animation: pulse 1.5s infinite;
+}
+img:hover {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+animation: pulse 1.5s ease-in-out infinite;
+#Centres_interets ul li {
+  margin-bottom: 10px; /* espace vertical entre les icônes */
+  list-style: none;
+}
+#Centres_interets ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* espace automatique entre les icônes */
+  
+}
+
+@media print {
+  * {
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+.mini-prev { left: 10px; }
+.mini-next { right: 10px; }
+
+
+.p_colonne_droite{ 
+    background-color: lightblue;
+
+}
+.p_colonne_gauche{
+    background-color: lavender;
+}
+#maPhoto:hover{ background: pink;}
+a { text-decoration: none;}
+.Curious::first-letter{ font-family: Garamond, serif;
+  font-weight: bold; 
+  font-size: 2em; /*je la met en position de lettrine*/
+  float: left; 
+  padding: 5px;
+  margin-right: 5px;
+  background-color: #fdf6e3;
+  border: 3px solid #7b4b2a;
+  color: #3e2f1c;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.2);}

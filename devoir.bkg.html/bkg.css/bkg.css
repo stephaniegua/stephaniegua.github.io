@@ -1,0 +1,133 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body{ font-family: Ubuntu,sans-serif;}
+#wrapper { max-width: 1628px; margin: 0 auto; padding: 0; display: flex; justify-content: center; flex-flow: row wrap; }
+
+
+                                       /*  HEADER   */ 
+
+
+header{ position: relative; }
+.angle{ position:absolute;top: 40%;left: 5%;color: black;}
+.d{ font-size: 2em; font-weight: bold;}
+.menu-overlay {position: fixed; top: 0;left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.9); display: none; justify-content: center; align-items: center; }
+.menu-overlay.visible {display: flex; }
+.menu-content { background-color: hsl(163, 27.7%, 32%); color: white; text-align: left; width: 100%;height: 100%; padding: 2em; }
+.menu-content ul { list-style: none; padding: 0; }
+.menu-content li { margin: 5em 0; }
+.menu-content a { color: white; font-size: 2em; text-decoration: none; }
+.menu-content a:hover{ color:#f44336; }
+.Close-menu { position: absolute; top: 0.8em; right: 2em; font-size: 2em; background: none; color: black; border: none;
+ cursor: pointer; transition: background-color 0.5s ease-in-out; }
+.Close-menu:hover{ background-color: rgba(255, 255, 255, 0.2); /* Transparence sans impacter les enfants */}
+.burg-icon { width: 2.5em; /* Taille du burger */ height: 2.5em; background: url(../bkg.img/burg.png) no-repeat; background-size: cover; /* Ajuste l’image */ background-position: top; /* Affiche uniquement le haut (le burger) */}
+.burg-container:hover{ background-color: rgba(255, 255, 255, 0.2); /* Transparence sans impacter les enfants comme le fait opacity */}
+ .burg-container { position: absolute; top: 2em; right: 2em; display: flex; align-items: center; transition: background-color 0.5s ease-in-out; /* Animation fluide */}
+.menu-text { font-size: 1em; /* Taille du texte */ font-weight: bold; color: #333; /* Couleur du texte */ padding: 0; line-height: 5em; /* Aligne le texte avec l’icône burger */margin-right: 1em; margin-top: -1em; }
+
+
+                                        /*   CORPS    */
+
+
+.col {  padding: 0.625rem; }
+img { width: 100%;max-width: 100%; height: auto; /* Préserve les proportions de l'image */ display: block; /* Évite les marges indésirables */}
+figcaption{ font-size: 1.3em;font-weight: 500;margin-top: 1em;}
+.more { display: none; }
+.read-more-btn { color: #549ff3; cursor: pointer; text-decoration: none; }
+.read-more-btn:hover{ color:  #f00;}
+.dots{ display: inline; }
+
+
+                                   /*         FORM            */
+
+
+form{ background-image: url(../bkg.img/bkg-form.jpg);}
+fieldset { width: 55%; margin: 1em; margin: 0 auto;position: relative;padding-top: 2em;background-color: rgba(255, 255, 255, 0.5); /* Fond semi-transparent */} 
+legend { color: #4B6375; font: 1.5em cursive; font-style: italic; top: 0; /*top right bottom left*/position:absolute;margin: 0.3em;}
+label{ color: #669;margin-right: 0.1em;}
+.ligne_2_parties { width: 100%; line-height: 2em; display: flex; justify-content: space-between;}
+.partie_gauche { width: 30%; padding: 0.3em;margin: 0.3em;}
+.partie_droite { width: 30%; padding: 0.3em;margin: 0.3em; float: right;}
+input[type="submit"] { padding: 0.7em; background: linear-gradient(45deg, #b9bbde, #669);border-radius: 2em; display: block; margin: auto;color: white;font-weight: 700; width: 16%;min-width: 150px;}
+input[type="reset"]{ padding: 0.7em;background: linear-gradient(45deg, #b8babb, #6f6e73);border-radius: 2em;display: block;margin: auto;color: white; font-weight: 700; margin-bottom: 1em;width: 16%;min-width: 150px;}
+textarea { width: 100%; max-width: 100%; /* Largeur maximale */resize: vertical; }
+input:not([type="submit"]):not([type="reset"]), textarea { width: 100%;min-width: 100px; padding: 0.1em;margin-right: 0;
+box-sizing: border-box; /* Empêche les marges internes de casser la largeur */   }
+
+
+                                /*     FOOTER      */
+
+
+footer { background-color:  #ff7fcf; padding:1.5em; /* Pour que le footer soit centré par rapport au conteneur parent */ text-align: center; /* Centre le contenu à l'intérieur du footer */}
+footer a { display: block; text-align:center; background-color: rgba(120,120,120,0.2); color: #ededed; text-decoration: none; width: 100%; }
+footer a:hover { background-color: rgba(120,120,120,0.8);color: #fff; }
+.footer-container { display: flex; justify-content:center; /* Répartit les colonnes */padding: 0.5em; color: white; margin: 0 auto; }
+.footer-column{ width: 100%;}
+.footer-column ul {list-style:none; padding: 0; }
+.footer-column ul li { display: flex; align-items: center; margin: 0; padding: 0; line-height: 1; /* Réduit l'espace vertical */ }
+.footer-column ul li a { text-align: left; padding-left: 0.7em; color: white; text-decoration: none; display: block; }
+.footer-column ul li::before { content: ""; /* Vérifier si "content" fonctionne */display: block; width: 0.6em; height: 1em;
+background-color: white;}
+
+            
+            
+
+                            /* PETIT ECRAN*/
+            
+            
+ 
+@media screen and (max-width: 480px) {
+    .xs-col-12 { width: 100% !important; /* Forcer la largeur */}
+    .col { display: block; /* Assurer l'empilement vertical */ margin: 0 auto; /* Centrer les articles */ overflow:visible;}
+    .footer-container {display: flex; flex-direction: column; /* Force l'affichage vertical */}
+    .footer-column { width: 100% !important; /* Chaque colonne prend toute la largeur */}
+    .ligne_2_parties { width: 100%; line-height: 2em; display: flex;flex-direction: column;}
+    .partie_gauche{ width: 90%;}
+    .partie_droite{ width: 90%;}
+    textarea { width: 100%; max-width: 100%; /* Largeur maximale */ resize: vertical; min-height: 300px;}
+    input:not([type="submit"]):not([type="reset"]), textarea { width: 100%; padding: 0.1em;margin-right: 0; box-sizing: border-box; /* Empêche les marges internes de casser la largeur */}
+              
+}
+            
+                            /*ECRAN MOYEN*/
+            
+            
+@media screen  and (max-width: 1200px){
+    .ls-col-1 { width: calc((100% / 12) * 1) ;}
+    .ls-col-2 { width: calc((100% / 12) * 2) ;}
+    .ls-col-3 { width: calc((100% / 12) * 3) ;}
+    .ls-col-4 { width: calc((100% / 12) * 4) ;}
+    .ls-col-5 { width: calc((100% / 12) * 5) ;}
+    .ls-col-6 { width: calc((100% / 12) * 6) ;} 
+    .ls-col-7 { width: calc((100% / 12) * 7) ;}
+    .ls-col-8 { width: calc((100% / 12) * 8) ;}
+    .ls-col-9 { width: calc((100% / 12) * 9) ;}
+    .ls-col-10 { width: calc((100% / 12) * 10)}
+    .ls-col-11 { width: calc((100% / 12) * 11);}
+    .ls-col-12 { width: calc((100% / 12) * 12);}
+    .ls{ display: flex;flex-wrap: wrap;}
+    fieldset { width: 100%; margin: 1em; margin: 0 auto;position: relative;padding-top: 2em;background-color: rgba(255, 255, 255, 0.5); /* Fond semi-transparent */}
+    .ligne_2_parties { width: 100%; line-height: 2em; display: flex;}
+    .partie_gauche, .partie_droite { width: 100%; display: flex; flex-direction: column; /* Met les labels au-dessus des inputs */}
+    textarea{ min-height: 300px;}
+    .footer-container { display: flex; /* Change de flexbox à block */ flex-wrap: wrap; text-align: center; justify-content: space-between;}
+    .footer-column { width: 50%; /* Deux colonnes en mode moyen écran */}
+    
+                 }
+                                  
+
+                                     /*GRAND ECRAN */
+            
+
+@media screen and (min-width: 1200px) {
+    .xl-col-3 { width: 20% ;}
+    .xl-col-4 { width: 26.7%;}
+    .xl-col-6 { width: 40% ; } 
+    .xl-col-12 { width: calc((100% / 12) * 12);}
+    .xl{display: flex; justify-content: center; flex-wrap: wrap;}
+    .ligne_2_parties { width: 100%; line-height: 2em; display: flex;}
+    .partie_gauche, .partie_droite { width: 100%; display: flex; flex-direction: column; /* Met les labels au-dessus des inputs */}
+    textarea{ min-height: 300px;}
+    .footer-column { width: 33%; /* Chaque colonne prend 30% de la largeur */text-align: left; /* Ajuste l'alignement du texte */ justify-content: center; }
+            
+                    
+          }
