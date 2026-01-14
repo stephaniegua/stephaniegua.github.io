@@ -1,0 +1,26 @@
+.left-spacer {
+  flex: 1;
+}
+
+.header {
+  flex: 1;
+  text-align: center;
+}
+
+.right-spacer {
+  flex: 1;
+}
+
+/*{ margin: 0 auto; } ne fonctionne pas 
+si dans mon composant, j'avai deux sources de styles :
+
+ 1. styles: [...] dans le décorateur
+ 2. styleUrls: ['./header.css']
+Et Angular applique l’encapsulation :
+mon CSS dans header.css sera bien chargé
+mais il ne s’appliquera pas parce que ton <span class="header"> est dans un mat-toolbar qui utilise un layout display: flex.
+
+.........Et dans un flex container :
+
+margin: 0 auto;
+ne centre PAS un élément inline comme <span>.*/
