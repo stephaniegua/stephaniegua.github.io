@@ -1,0 +1,36 @@
+.nav-link.active {
+    color: blue !important; /* ou un autre bleu plus précis comme #0d6efd */
+  }
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .py-sm-custom {
+    padding-top: 1rem;
+   
+      
+     
+}
+    
+    }
+
+   .img-responsive-custom {
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive carré à SM et MD */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .img-responsive-custom {
+    width: 250px;
+    max-width: 100%; /* ← clé magique */
+    height: auto;
+    aspect-ratio: 1 / 1; /* carré */
+  }
+}
+
+
+  
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ma Page Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/page-b.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Titre principal -->
+  <header class="text-center py-4">
+    <h1>Le titre</h1>
+  </header>
+
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Qui sommes-nous</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Section 1 : Cards avec media object horizontal -->
+    <section class="mb-5">
+      <!-- Card 1 -->
+      <div class="card border-0 mb-4 p-3 d-flex flex-sm-column flex-md-row align-items-start">
+        <img src="../images/butterfly-8299620_640.jpg" class="img-fluid px-md-3  rounded img-responsive-custom me-3"   alt="Papillon paon du jour buttinant de la camomille">
+        <div>
+          <h5 class="card-title py-0em py-sm-custom ">Nous n'allons pas</h5>
+          <p class="card-text">  Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi, </p>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card border-0 mb-4 p-3 d-flex flex-sm-column flex-md-row align-items-start">
+        <img src="../images/flowers-7957027_640.jpg" class="img-fluid px-md-3 rounded img-responsive-custom me-3"   alt="bouquet de fleurrs sur fond noir">
+        <div>
+          <h5 class="card-title py-0em py-sm-custom ">D'une manière ou d'une autre</h5>
+          <p class="card-text">  Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi, </p>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="card border-0 mb-4 p-3 d-flex flex-sm-column flex-md-row align-items-start">
+        <img src="../images/pink-324175_640.jpg" class="img-fluid px-md-3 rounded img-responsive-custom me-3" alt="Fleurs de cerisiers">
+        <div>
+          <h5 class="card-title py-0em py-sm-custom">Tandis que la politique</h5>
+          <p class="card-text">  Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi,</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 : Media vertical en grille responsive -->
+    <section class="mb-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Bloc 4 -->
+        <div class="col">
+          <div class="media flex-column text-start border rounded">
+              <div class="ratio ratio-4x3 mb-2">
+            <img src="../images/alley-4730262_640.jpg" class="img-fluid w-100 object-fit: cover;"  alt="ruelle ancienne">
+              </div>
+            <div class="media-body p-2">
+              <h5 class="mt-0">qui pro muro tuetur accolas circumfusus</h5>
+              <p class="mb-0">  Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi,</p>
+                <div class="collapse" id="paragraphe4">
+                <p> qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. arbitrabantur enim nullo inpediente transgressi inopino adcursu adposita quaeque vastare, sed in cassum labores pertulere gravissimos..</p>
+                </div>
+                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#paragraphe4" role="button" aria-expanded="false" aria-controls="contenuComplet">Lire la suite </a>
+            </div>
+          </div>
+        </div>
+        <!-- Bloc 5 -->
+        <div class="col">
+          <div class="media flex-column text-start border rounded">
+              <div class="ratio ratio-4x3 mb-2">
+            <img src="../images/old-city-2684798_640.jpg" class="img-fluid w-100  object-fit: cover;"  alt="passage ancien">
+              </div>
+            <div class="media-body p-2">
+              <h5 class="mt-0">qui pro muro tuetur accolas circumfusus</h5>
+              <p class="mb-0">  Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi,</p>
+                <div class="collapse" id="paragraphe5">
+                <p> qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. arbitrabantur enim nullo inpediente transgressi inopino adcursu adposita quaeque vastare, sed in cassum labores pertulere gravissimos.</p>
+                </div>
+                 <a class="btn btn-secondary" data-bs-toggle="collapse" href="#paragraphe5" role="button" aria-expanded="false" aria-controls="paragraphe5">Lire la suite </a>
+            </div>
+          </div>
+        </div>
+        <!-- Bloc 6 -->
+        <div class="col">
+          <div class="media flex-column text-start border rounded">
+              <div class="ratio ratio-4x3 mb-2">
+            <img src="../images/village-3735180_640.jpg" class="img-fluid w-100 mb-2 object-fit: cover;"  alt="Village en descente avec vue sur la colline">
+              </div>
+            <div class="media-body p-2">
+              <h5 class="mt-0">qui pro muro tuetur accolas circumfusus</h5>
+              <p class="mb-0">  Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi,</p>
+                <div class="collapse" id="paragraphe6">
+                <p> qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. arbitrabantur enim nullo inpediente transgressi inopino adcursu adposita quaeque vastare, sed in cassum labores pertulere gravissimos.</p>
+                </div>
+                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#paragraphe6" role="button" aria-expanded="false" aria-controls="contenuComplet">Lire la suite </a>
+            </div>
+          </div>
+        </div>
+        <!-- Bloc 7 -->
+        <div class="col">
+          <div class="media flex-column text-start border rounded">
+              <div class="ratio ratio-4x3 mb-2">
+            <img src="../images/man-1851469_640.jpg" class="img-fluid w-100 object-fit: cover;" alt="Portrait d'un vieil homme">
+              </div>
+            <div class="media-body p-2">
+              <h5 class="mt-0">qui pro muro tuetur accolas circumfusus</h5>
+              <p class="mb-0">  Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi,</p>
+             <div class="collapse" id="paragraphe7">
+                <p> qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. arbitrabantur enim nullo inpediente transgressi inopino adcursu adposita quaeque vastare, sed in cassum labores pertulere gravissimos.</p>
+             </div>
+                <a class="btn btn-secondary" data-bs-toggle="collapse" href="#paragraphe7" role="button" aria-expanded="false" aria-controls="contenuComplet">Lire la suite </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+
+
+  </div>
+    
+    <footer class="bg-secondary text-center py-3 mt-5">
+          <p class="mb-0">Le footer</p>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
