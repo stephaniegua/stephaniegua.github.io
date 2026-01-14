@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: #f9f9f9;
+}
+
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produit {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+button {
+    padding: 8px 12px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+.container {
+    text-align: center;
+    padding-top: 20px;
+}
+.btn-panier {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-panier:hover {
+    background-color: #27ae60;
+}
+img {
+    max-width:150px; 
+    border-radius:8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+h1 {
+    text-align: center;
+}
+.panier-vide {
+    text-align: center;
+    font-size: 18px;
+    color: #999;
+    margin-top: 40px;
+}
+.panier-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.panier-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.panier-item .details {
+    flex: 1;
+}
+
+.panier-item h4 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.panier-item p {
+    margin: 4px 0;
+    color: #555;
+}
