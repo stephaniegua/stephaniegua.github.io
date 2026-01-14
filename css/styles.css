@@ -9,7 +9,7 @@
     display: inline-block;
     padding: 12px 24px;
     background-color: #007bff;
-    color: white;
+    color: white !important;
     text-decoration: none;
     border-radius: 6px;
     font-size: 18px;
@@ -36,15 +36,5 @@ a:hover {
     text-decoration: underline;
 }
 a:visited {
-    color: #0056b3;
-}
-link {
-    color: #007bff;
-    text-decoration: none;
-}
-link:hover {
-    text-decoration: underline;
-}
-link:visited {
     color: #0056b3;
 }
