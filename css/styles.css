@@ -20,3 +20,31 @@
 .btn-cv:hover {
     background-color: #0056b3;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: antiquewhite;
+    width: 80%;
+    margin: 0 auto;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #0056b3;
+}
+link {
+    color: #007bff;
+    text-decoration: none;
+}
+link:hover {
+    text-decoration: underline;
+}
+link:visited {
+    color: #0056b3;
+}
