@@ -1,6 +1,8 @@
-.btn-container {
-    margin-top: 0;
-    text-align: center;
+.header-row {
+    display: flex;
+    align-items: center;/* alignement vertical */
+    justify-content: space-between;/* h1 à gauche, bouton à droite */
+    margin-bottom: 20px;
 }
 
 .btn-cv {
