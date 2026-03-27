@@ -1,31 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio de Stéphanie</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Stéphanie</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="header-row">
-    <h1>Bienvenue sur mon portfolio</h1>
-    <a href="html/cv.2-fr.html" class="btn-cv" target="_blank">Voir mon CV</a>
+<body class="bg-gradient-to-br from-amber-50 to-orange-100 text-gray-800 font-sans">
+
+<!-- HERO -->
+<header class="text-center py-16">
+  <h1 class="text-4xl md:text-5xl font-bold mb-4">Stéphanie</h1>
+  <p class="text-lg md:text-xl text-gray-600">Développeuse web</p>
+  <p class="mt-4 max-w-xl mx-auto">Je crée des applications modernes, accessibles et centrées sur l’utilisateur.</p>
+</header>
+
+<!-- PROJETS -->
+<section class="max-w-6xl mx-auto px-6 pb-16">
+  <h2 class="text-3xl font-semibold text-center mb-10">Mes projets</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Carte projet -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="https://via.placeholder.com/400x200" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-bold mb-2">Site e-commerce</h3>
+        <p class="text-sm text-gray-600 mb-3">Panier dynamique en JavaScript.</p>
+        <div class="flex justify-between text-sm">
+          <a href="https://github.com/stephaniegua/mon_panier" target="_blank" class="text-blue-500 hover:underline">Code</a>
+        </div>
+      </div>
     </div>
-    <div class="text-box">
-    <p>Je m'appelle Stéphanie et je suis développeuse web en formation. Voici quelques-uns de mes projets récents :</p>
-    <ul>
-        <li><a href="https://github.com/stephaniegua/mon_panier" target="_blank" rel="noopener">Projet 1 : Site e-commerce (code)</a></li>
-        <li><a href="my-school/index.html" target="_blank" rel="noopener">Projet 2 : Application Angular</a></li>
-        <li><a href="pageBootstrap/html/page_bootstrap.html" target="_blank" rel="noopener">Projet 3 : Blog personnel avec Bootstrap</a></li>
-        <li><a href="https://flask-login-app-lmqq.onrender.com" target="_blank">Voir l'application en ligne</a></li>
-        <a href="https://github.com/stephaniegua/flask-login-app" target="_blank">Voir le code</a>
-        <li><a href="https://stephaniegua.github.io/club-sport-toulouse/">Projet 4 : Application pour trouver un club de sport</a></li>
-    </ul>
-    <div class="container">
-    <img src="images/betonsalon.jpg" alt="Prototype BetonSalon" class="img">
-    <a href="https://www.figma.com/design/gXAJTuhu4CsUyXwGkoxpmv/BetonSalon?node-id=255-3&t=GPaNh4bidiJqT5tS-1" class="btn-cv" target="_blank" rel="noopener">Voir le prototype</a>
+
+    <!-- Carte projet -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="https://via.placeholder.com/400x200" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-bold mb-2">Application Angular</h3>
+        <p class="text-sm text-gray-600 mb-3">Application SPA dynamique.</p>
+        <div class="flex justify-between text-sm">
+          <a href="my-school/index.html" target="_blank" class="text-green-600 hover:underline">Voir</a>
+        </div>
+      </div>
     </div>
-    <p>N'hésitez pas à me contacter pour toute collaboration ou opportunité professionnelle.</p>
+
+    <!-- Carte projet -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition duration-300">
+      <img src="https://via.placeholder.com/400x200" class="w-full h-48 object-cover">
+      <div class="p-5">
+        <h3 class="text-xl font-bold mb-2">App Flask</h3>
+        <p class="text-sm text-gray-600 mb-3">Authentification utilisateur.</p>
+        <div class="flex justify-between text-sm">
+          <a href="https://flask-login-app-lmqq.onrender.com" target="_blank" class="text-green-600 hover:underline">Voir</a>
+          <a href="https://github.com/stephaniegua/flask-login-app" target="_blank" class="text-blue-500 hover:underline">Code</a>
+        </div>
+      </div>
     </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 text-gray-500 text-sm">
+  © 2026 Stéphanie - Portfolio
+</footer>
+
 </body>
 </html>
+
