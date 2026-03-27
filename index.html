@@ -83,6 +83,51 @@
       </div>
     </div>
 
+     <!-- Carte projet -->
+   <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-5">
+  <h3 class="text-xl font-bold mb-4">Mes débuts</h3>
+
+  <div class="relative">
+    <!-- Slides -->
+    <div class="mini-slide active">
+      <div class="h-48 bg-cover bg-center rounded-xl flex items-end p-3 text-white"
+           style="background-image: url('images/pasglobe.jpg');">
+        <div>
+          <h5 class="font-bold">Globule Globe</h5>
+          <p class="text-sm">Display</p>
+          <a href="html/Exercice1.a.html" target="_blank" class="underline">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mini-slide hidden">
+      <div class="h-48 bg-cover bg-center rounded-xl flex items-end p-3 text-white"
+           style="background-image: url('images/cinema.jpg');">
+        <div>
+          <h5 class="font-bold">Street View</h5>
+          <p class="text-sm">Flexbox</p>
+          <a href="html/Ex2.a.800px.html" target="_blank" class="underline">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mini-slide hidden">
+      <div class="h-48 bg-cover bg-center rounded-xl flex items-end p-3 text-white"
+           style="background-image: url('images/large.bkg1628w.png');">
+        <div>
+          <h5 class="font-bold">Bkg</h5>
+          <p class="text-sm">Grid + Flexbox</p>
+          <a href="devoir.bkg.html/bkg.html/responsive.bkg.html" target="_blank" class="underline">Voir</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Boutons -->
+    <button class="mini-prev absolute left-2 top-1/2 -translate-y-1/2 bg-white px-2 py-1 rounded shadow">‹</button>
+    <button class="mini-next absolute right-2 top-1/2 -translate-y-1/2 bg-white px-2 py-1 rounded shadow">›</button>
+  </div>
+</div> 
+       
   </div>
 </section>
 
@@ -91,6 +136,36 @@
   © 2026 Stéphanie - Portfolio
 </footer>
 
+  <script>
+const slides = document.querySelectorAll('.mini-slide');
+const prevBtn = document.querySelector('.mini-prev');
+const nextBtn = document.querySelector('.mini-next');
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('hidden', i !== index);
+  });
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  showSlide(currentIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+});
+
+showSlide(currentIndex);
+</script>
+
 </body>
+
+  
 </html>
+
+
 
