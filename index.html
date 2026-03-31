@@ -154,6 +154,14 @@ nextBtn.addEventListener('click', () => {
 });
 
 showSlide(currentIndex);
+
+const btn = document.getElementById('menu-btn');
+const menu = document.getElementById('mobile-menu');
+
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
 </script>
 
 </body>
