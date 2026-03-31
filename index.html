@@ -17,31 +17,30 @@
   
 </header>
 
+<nav class="bg-white shadow-md">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <h2 class="font-bold text-lg">Stéphanie</h2>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Stéphanie</a>
-
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+    <button id="menu-btn" class="md:hidden text-2xl">
       ☰
     </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="nav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Accueil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projets">Projets</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="cv.html">CV</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+    <ul id="menu" class="hidden md:flex gap-6 text-sm">
+      <li><a href="#" class="hover:text-blue-500">Accueil</a></li>
+      <li><a href="#projets" class="hover:text-blue-500">Projets</a></li>
+      <li><a href="html/cv.2-fr.html" target="_blank" class="hover:text-blue-500">CV</a></li>
+      <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+    </ul>
+
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="hidden px-6 pb-4 md:hidden">
+    <a href="#" class="block py-2">Accueil</a>
+    <a href="#projets" class="block py-2">Projets</a>
+    <a href="html/cv.2-fr.html" target="_blank" class="block py-2">CV</a>
+    <a href="#contact" class="block py-2">Contact</a>
   </div>
 </nav>
 
