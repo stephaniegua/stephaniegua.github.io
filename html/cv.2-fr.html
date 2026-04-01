@@ -20,8 +20,9 @@
           <img src="../images/Icone_profil3_470x470.jpg"
           class="rounded-circle mb-3"
           width="120"
-          alt="avatar">
-</a>
+          alt="avatar"></a>
+          <p id="message" class="hidden text-sm text-blue-500 mt-2">
+  👀 Tu peux cliquer sur ma photo !</p>
        
         <h4 class="fw-bold">Stéphanie GUALANO</h4>
         <p class="text-info">Développeuse Web Fullstack (en formation)</p>
@@ -187,5 +188,16 @@
 
   </div>
 </main>
+        <script>
+            
+            
+             const avatar = document.getElementById("avatar");
+             const message = document.getElementById("message");
+            
+
+             avatar.addEventListener("click", () => {
+             message.classList.toggle("hidden");
+               });
+         </script>
     </body>
 </html>
