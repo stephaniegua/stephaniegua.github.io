@@ -1,8 +1,8 @@
-Portfolio 
+
 Bienvenue sur mon portfolio professionnel.
 Ce site présente mon parcours, mes compétences et une sélection de projets réalisés dans le cadre de ma formation et de mes travaux personnels.
 
- À propos de moi
+
 Je m’appelle Stéphanie, je suis développeuse web et je conçois des applications modernes, accessibles et centrées sur l’utilisateur.
 J’aime créer des interfaces simples et efficaces, et développer des fonctionnalités robustes côté backend.
 
